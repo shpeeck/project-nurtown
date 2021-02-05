@@ -1,0 +1,31 @@
+<div class="contact">
+    <div class="container">
+        <h2 class="contact__title">Связаться с нами</h2>
+        <div class="contact__content">
+            <div class="contact_form">
+                <form class="form__field js-form form" action="mail.php" method="POST">
+                    <input class="form__field-input" type="text" placeholder="Имя" required
+                        name="user-name">
+                    <input class="form__field-input" type="phone" placeholder="Номер телефона*" required
+                        data-validate-field="phone" name="user-phone">
+                    <input class="form__field-input" type="email" placeholder="E-mail*" required
+                        data-validate-field="email" name="user-email">
+                    <input class="form__field-input" type="text" placeholder="Интересующий товар/услуга" required
+                        data-validate-field="service" name="user-service">
+                    <textarea class="form__field-input form__field-input--textaria" placeholder="Сообщение*"
+                        name="text" data-validate-field="text"></textarea>
+                    <div class="chexkbox-wrapper">
+                        <input type="checkbox" checked>
+                        <span class="form__field-text">
+                            Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+                        </span>
+                    </div>
+                    <input class="button projects__button" type="submit" value="Отправить">
+                </form>
+            </div>
+            <div class="contact__image">
+                <img src="img/10.jpg" alt="contact">
+            </div>
+        </div>
+    </div>
+</div>

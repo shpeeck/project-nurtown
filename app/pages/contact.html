@@ -1,0 +1,142 @@
+@@include("blocks/_header.html",
+{
+"title": "Контакты"
+}
+)
+
+
+
+    <header class="header">
+        <div class="header-menu">
+            <div class="container">
+                <div class="menu-wrapper">
+                    <div class="header-logo">
+                        <a class="header-logo__link" href="index.html"><img class="header-logo__image"
+                                src="img/logo.svg" alt="logo"></a>
+                    </div><!-- end header-logo -->
+                    <!-- Навигация -->
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__item">
+                                <a class="header-nav__item-link"
+                                    href="index.html">Главная</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__item-link" href="galery.html">Галерея</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__item-link" href="projects.html">Проекты</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__item-link" href="sertificats.html">Сертификаты</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__item-link" href="contact.html">Контакты</a>
+                            </li>
+                        </ul>
+
+                    </nav><!-- end header-nav -->
+                    <!-- Мобильное меню -->
+
+                    <div class="header__mobile-menu">
+                        <button class="hamburger hamburger--collapse" type="button">
+                            <span class="hamburger-slider">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                        <div class="mobile-menu">
+                            <ul class="mobile-menu__list">
+                                <li class="header-nav__item">
+                                    <a class="header-nav__item-link" href="index.html">Главная</a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a class="header-nav__item-link" href="galery.html">Галерея</a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a class="header-nav__item-link" href="projects.html">Проекты</a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a class="header-nav__item-link" href="sertificats.html">Сертификаты</a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a class="header-nav__item-link" href="contact.html">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end mobile-menu -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div class="contact-page">
+    <div class="container">
+        <div class="contact-page__wrapper">
+            <div class="contact-page__content">
+                <h2 class="slider__title">КОНТАКТНАЯ</h2>
+                <h3 class="slider__subtitle">ИНФОРМАЦИЯ</h3>
+                <p class="contact-page__text"><span>«Digital Project»</span> 
+                <br>
+                г. Караганда, ул. Телевизионная 10 </p>
+                <p class="contact-page__text"><a href="tel: +77017776811"><span>+7 (701) 77 76 811</span></a></p>
+                <p class="contact-page__text"><a
+                    href="mailto: Galym.sultanov@mail.ru">Galym.sultanov@mail.ru</a>
+                </p>
+                <div class="contact-page__button-wrapper">
+                    <div  class="button contact-page__button">Орабтная связь</div>
+                </div>
+            </div>
+            <div class="contact-page__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.9846351528136!2d73.08341361570878!3d49.82395397939394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424346c3b32ffcaf%3A0x41481e634d919f9e!2z0YPQuy4g0KLQtdC70LXQstC40LfQuNC-0L3QvdCw0Y8gMTAsINCa0LDRgNCw0LPQsNC90LTQsCAxMDAwMDAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2sua!4v1611834305741!5m2!1sru!2sua" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- popup 1-->
+<div class="modal-form">
+    <div class="modal__block-form">
+        <h2>Задать вопрос</h2>
+        <div class="contact_form contact_form--mob contact_form-modal">
+            <form class="form__field js-form form" action="mail.php" method="POST">
+                <input class="form__field-input" type="text" placeholder="Имя" required name="user-name">
+                <input class="form__field-input" type="phone" placeholder="Номер телефона*" required
+                    data-validate-field="phone" name="user-phone">
+                <input class="form__field-input" type="email" placeholder="E-mail*" required
+                    data-validate-field="email" name="user-email">
+                <input class="form__field-input" type="text" placeholder="Интересующий товар/услуга" required
+                    data-validate-field="service" name="user-service">
+                <textarea class="form__field-input form__field-input--textaria" placeholder="Сообщение*"
+                    name="text" data-validate-field="text"></textarea>
+                <div class="chexkbox-wrapper chexkbox-wrapper--left">
+                    <input type="checkbox" checked>
+                    <span class="form__field-text">
+                        Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+                    </span>
+                </div>
+                <input class="button projects__button button__modal" type="submit" value="Отправить">
+            </form>
+        </div>
+        <div class="modal__close"></div>
+    </div>
+</div>
+
+<!-- popup 2-->
+<div class="modal">
+    <div class="modal__block">
+        <div class="round-one">
+            <div class="round-too">
+                <img src="img/ok.svg" alt="ok">
+            </div>
+        </div>
+        <h3 class="modal__title">Спасибо!</h3>
+        <p class="modal__text">Ваше сообщение отправлено мы свяжемся с вами в ближайшее время</p>
+        <div class="modal__button">вернуться назад</div>
+        <div class="modal__close"></div>
+    </div>
+</div>
+
+
+@@include("blocks/_footer.html")

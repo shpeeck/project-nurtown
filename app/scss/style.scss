@@ -1,0 +1,44 @@
+@import "vars";
+@import "mixin";
+@import "fonts";
+@import "basic";
+
+// header
+@import "components/header-menu";
+
+// slider 
+@import "components/header-slider";
+
+// about company
+@import "components/about-company";
+
+// tasks
+@import "components/tasks";
+
+// projects
+@import "components/projects";
+
+// contact
+@import "components/contact";
+
+// footer
+@import "components/footer";
+
+// galery
+@import "components/galery";
+
+// projects-page
+@import "components/projects-page";
+
+// sertificats
+@import "components/sertificats";
+
+// contact-page
+@import "components/contact-page";
+
+// page 
+@import "components/page";
+
+// mobile and form 
+@import "components/mob-form";
+

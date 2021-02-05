@@ -1,0 +1,136 @@
+.contact {
+    
+    &-page {
+        margin-top: 140px;
+
+        @media (max-width: 1200px) {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        &__wrapper {
+            display: flex;
+            position: relative;
+            /* display: grid;
+            grid-template-columns: 5fr 7fr; */
+
+            @media (max-width: 991px) {
+                flex-direction: column;
+            }
+        }
+
+        &__content {
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+
+        &__text {
+            font-family: TT Hoves;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #333333;
+            margin-top: 35px;
+
+            & span {
+                font-weight: bold;
+            }
+
+            & a {
+                text-decoration: none;
+                font-family: TT Hoves;
+                font-style: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: #333333;
+                margin: 0;
+                padding: 0;
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__map {
+            overflow: hidden;
+            margin-left: 35px;
+            max-width: 800px;
+            max-height: 500px;
+
+            /* overflow-y:hidden;  для вертикального */
+            /* overflow-x:hidden;
+            position: relative;
+            right: 0; */
+
+            @media (max-width: 991px) {
+                margin-top: 30px;
+                margin-right: 35px;
+            }
+        }
+
+        &__button {
+            background: #333333;
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 12px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #ffffff;
+            align-self: start; 
+            cursor: pointer;
+            text-align: center;
+            max-width: 220px;
+
+            &-wrapper {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+// .modal {
+//     &-form {
+//         position: fixed;
+//         top: 0;
+//         bottom: 0;
+//         right: 0;
+//         left: 0;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         opacity: 0;
+//         visibility: hidden;
+//         /* visibility: visible; */
+//         z-index: 1;
+//         background-color: rgba(200, 200, 200, 0.9);
+//         transition: all 0.5s ease-in-out;
+//         padding: 28px 39px;
+
+//         &-modal {
+//             width: 82%;
+//         }
+//     }
+
+//     &-active {
+//         visibility: visible;
+//         opacity: 1;
+//         transition: all 0.5s ease-in-out; 
+//     }
+
+//     &__block {
+//         &-form {
+//             width: 469px;
+//             height: 700px;
+//             background: #fff;
+//             display: flex;
+//             justify-content: center; 
+//             align-items: center;
+//             flex-direction: column;
+//             position: relative;  
+//         }
+//     }
+// }

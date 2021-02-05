@@ -1,0 +1,325 @@
+.footer {
+    background-color: #2c2c2c;
+    margin: 120px 0 0 0;
+    padding-top: 58px;
+
+    @media (max-width: 991px) {
+        margin-top: 50px;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        @media (max-width: 1050px) {
+            display: none;
+        }
+    }
+
+    &__info {
+        margin-left: 120px;
+
+        @media (max-width: 991px) {
+            margin-left: 100px;
+        }
+        @media (max-width: 841px) {
+            margin-left: 50px;
+        }
+
+        &-title {
+            margin: 0 0 25px 0;
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            align-items: flex-end;
+            color: #ffffff;
+        }
+
+        &-list {
+            margin: 0;
+            padding: 0;
+        }
+
+        &-item {
+            list-style: none;
+            margin: 0 0 16px 0;
+            padding: 0;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            & a {
+                text-decoration: none;
+                font-family: TT Hoves;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+                color: #ffffff;
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__contacts {
+        max-width: 300px;
+        margin-left: 120px;
+
+        @media (max-width: 991px) {
+            margin-left: 100px;
+        }
+        @media (max-width: 941px) {
+            margin-left: 50px;
+        }
+        @media (max-width: 450px) {
+            margin-top: 50px;
+        }
+
+        &-wrapper {
+            height: 190px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media (max-width: 450px) {
+                display: block;
+                height: 120px;
+            }
+        }
+
+        &-title {
+            margin: 0 0 25px 0;
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            align-items: flex-end;
+            color: #ffffff;
+        }
+
+        &-adress {
+            display: flex;
+        }
+
+        &-content {
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+
+            @media (max-width: 450px) {
+                margin-bottom: 16px;
+            }
+
+            & a {
+                text-decoration: none;
+                font-family: TT Hoves;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+                color: #ffffff;
+                margin: 0;
+                padding: 0;
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &-img {
+            margin: 0 19px 0 0;
+            width: 16px;
+            height: 16px;
+        }
+
+        &-mail {
+            display: flex;
+        }
+
+        &-phone {
+            display: flex;
+        }
+    }
+
+    &__socials {
+        margin-left: 120px;
+
+        @media (max-width: 991px) {
+            margin-left: 100px;
+        }
+
+        @media (max-width: 841px) {
+            margin-left: 50px;
+        }
+        @media (max-width: 627px) {
+            margin-top: 50px;
+        }
+
+        &-wrapper {
+            width: 190px;
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 991px) {
+                width: 120px;
+            }
+        }
+
+        &-title {
+            margin: 0 0 25px 0;
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            align-items: flex-end;
+            color: #ffffff;
+        }
+    }
+
+    &__line {
+        margin: 60px 0 24px 0;
+    }
+
+    &__copy {
+        padding-bottom: 12px;
+        text-align: center;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 22px;
+        color: rgba(200, 200, 200, 0.5);
+    }
+}
+
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    /* visibility: visible; */
+    z-index: 1;
+    background-color: rgba(200, 200, 200, 0.9);
+    transition: all 0.5s ease-in-out;
+}
+
+.modal-active {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal__block {
+    width: 516px;
+    height: 421px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.round-one {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #D1D1D1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-too {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0DC332;
+    border-radius: 50%;
+    background: #0DC332;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__title {
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #333333;
+}
+
+.modal__text {
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 0 46px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #4F4F4F;
+}
+
+.modal__button {
+    width: 390px;
+    height: 40px;
+    background: #333333;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal__close {
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/close.svg');
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    cursor: pointer;
+}

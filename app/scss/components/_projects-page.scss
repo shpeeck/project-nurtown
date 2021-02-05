@@ -1,0 +1,80 @@
+.galery {
+    &__wrapper {
+        margin: 0;
+        padding: 0;
+
+        @media (max-width: 1169px) {
+            margin: 0 20px;
+        }
+    }
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
+
+    @media (max-width: 1169px) {
+        margin: 20;
+    }
+    @media (max-width: 870px) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__image {
+        max-width: 670px;
+
+        & img {
+            max-height: 100%;
+            min-height: 50%;
+            max-width: 100%;
+        }
+    }
+
+    &__content {
+        margin-left: 30px;
+    }
+
+    &__title {
+        font-family: TT Hoves;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 50px;
+        color: #bdbdbd;
+
+        @media (max-width: 480px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        @media (max-width: 360px) {
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+
+    &__text {
+        max-width: 400px;
+        font-family: TT Hoves;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        margin: 20px 0 60px 0;
+
+        @media (max-width: 870px) {
+            max-width: 95%;
+            margin: 15px 0 25px 0;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+    }
+}

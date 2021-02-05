@@ -1,0 +1,98 @@
+.tasks {
+    margin-top: 100px;
+    width: 100%;
+
+    @media (max-width: 767px) {
+        margin-top: 50px;
+    }
+
+    &-wrapper {
+        @media (max-width: 450px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__content {
+        margin-top: 60px;
+        display: flex;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            width: 100%;
+        }
+        @media (max-width: 480px) {
+            margin-top: 0px;
+        }
+
+        &-content {
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 36px;
+            color: #333333;
+
+            @media (max-width: 1200px) {
+                font-size: 20px;
+                padding: 0;
+                margin: 0;
+            }
+
+            @media (max-width: 991px) {
+                font-size: 18px;
+            }
+            @media (max-width: 480px) {
+                width: 90%;
+            }
+        }
+    }
+
+    &__content-item {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        width: 50%;
+
+        @media (max-width: 767px) {
+            width: 90%;
+            padding: 0 20px;
+        }
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
+    }
+
+    &__content-number {
+        padding-right: 30px;
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 200px;
+        line-height: 239px;
+        color: #f2f2f2;
+
+        @media (max-width: 480px) {
+            padding-right: 0;
+            line-height: 180px;
+        }
+    }
+
+    &__title {
+        font-family: TT Hoves;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 64px;
+        color: #bdbdbd;
+
+        @media (max-width: 480px) {
+            font-size: 50px;
+            line-height: 50px;
+            /* padding-left: 20px */
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.galery {
+    &__slider {
+        &-content {
+            &--disp {
+                display: flex;
+                justify-content: space-between;
+                max-height: 400px;
+            }
+        }
+    }
+}
+
+.img {
+    &-disp {
+        max-width: 337px; 
+        max-height: 450px;
+        margin: 0;
+        padding: 0;
+        justify-self: center;
+    }
+}
+
+.arrow {
+    &--right {
+        justify-content: flex-end;
+
+        &-new {
+            display: flex;
+            margin: 35px 0;
+            cursor: pointer; 
+        }
+    }
+}
+
+
+

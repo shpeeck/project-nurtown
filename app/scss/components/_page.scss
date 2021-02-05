@@ -1,0 +1,45 @@
+.page {
+    margin-top: 50px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+
+        &-img {
+            max-width: 1170px;
+            /* height: 435px; */
+            margin-bottom: 30px;
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        &-leader {
+            margin-bottom: 30px;
+        }
+
+        &-wrapper {
+            display: flex;
+        }
+
+        &-image {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &-text {
+            margin-left: 30px;
+            margin-right: 30px;
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px;
+            color: #000000;
+        }
+        
+    }
+}
