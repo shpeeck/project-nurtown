@@ -70,7 +70,7 @@ function browserSync() {
 
 // file include
 const fileinclude = function () {
-	return src(["app/pages/*html"])
+	return src(["app/pages/*.html"])
 	.pipe(
 		fi({
 			prefix:'@@',
@@ -82,11 +82,11 @@ const fileinclude = function () {
 
 function watchFiles() {
     watch('app/scss/**/*.scss', convertStyles);
-    watch('app/pages/**/*', fileinclude).on("change", sync.reload);
+    watch('app/pages/**/*.html', fileinclude).on("change", sync.reload);
     watch('app/css/*.css').on("change", sync.reload);
     watch('app/js/*.js').on("change", sync.reload);
     watch('app/_img/*.jpg', imagesCompressed);
-	watch('app/fonts/**.ttf', series(convertFonts, fontsStyle));
+    watch('app/fonts/**.ttf', series(convertFonts, fontsStyle));
 }
 
 
@@ -96,7 +96,7 @@ exports.browserSync = browserSync;
 exports.imagesCompressed = imagesCompressed;
 exports.struct = createFiles;
 
-exports.default = parallel(imagesCompressed, fileinclude, convertStyles, browserSync, watchFiles, series(convertFonts, fontsStyle));
+exports.default = parallel(imagesCompressed, fileinclude, convertStyles, browserSync, watchFiles);
 
 // build 
 function moveHtml() {

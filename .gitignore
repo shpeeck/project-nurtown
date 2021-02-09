@@ -24,7 +24,6 @@ $RECYCLE.BIN/
 *.lnk
 
 #my
-app/
 node_modules/
 package-lock.json
 # .gitignore
